@@ -99,8 +99,12 @@ public struct FloatingLabelTextField: View {
     
     // MARK: Bottom Line View
     var bottomLine: some View {
-        Divider()
-            .frame(height: self.isSelected ? notifier.selectedLineHeight : notifier.lineHeight, alignment: .leading)
+        Group {
+            if notifier.shouldShowLine {
+                Divider()
+                    .frame(height: self.isSelected ? notifier.selectedLineHeight : notifier.lineHeight, alignment: .leading)
+            }
+        }
     }
     
     //MARK: Body View
