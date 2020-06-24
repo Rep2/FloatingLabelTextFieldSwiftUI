@@ -233,6 +233,11 @@ extension FloatingLabelTextField {
         notifier.selectedLineColor = color
         return self
     }
+
+    public func shouldShowLine(_ shouldShowLine: Bool) -> Self {
+        notifier.shouldShowLine = shouldShowLine
+        return self
+    }
 }
 
 //MARK: Title Property Funcation
