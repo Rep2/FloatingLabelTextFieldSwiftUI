@@ -23,6 +23,7 @@ class FloatingLabelTextFieldNotifier: ObservableObject {
     @Published var selectedLineHeight: CGFloat = 1.5
     @Published var lineColor: Color = .black
     @Published var selectedLineColor: Color = .blue
+    @Published var shouldShowLine: Bool = true
     
     //MARK: Title Properties
     @Published var titleColor: Color = .gray
