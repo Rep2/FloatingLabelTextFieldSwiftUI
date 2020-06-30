@@ -235,7 +235,7 @@ extension FloatingLabelTextField {
     }
 
     public func shouldShowLine(_ shouldShowLine: Bool) -> Self {
-        notifier.shouldShowLine = color
+        notifier.shouldShowLine = shouldShowLine
         return self
     }
 }
